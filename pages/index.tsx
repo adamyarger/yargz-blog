@@ -15,30 +15,25 @@ export default function Home() {
     <>
       <DefaultLayout>
         <Head>
-          <title>Blocademy</title>
+          <title>yargz</title>
         </Head>
 
         <Box
           as="section"
-          pt={{ base: "10rem", md: "12rem" }}
+          pt={{ base: "6rem", md: "8rem" }}
           pb={{ base: "0", md: "5rem" }}
         >
           <Container>
-            <Box textAlign="center">
-              <Box mb="6">
-                <BlockchainIcon blockSize="125px" fill="blue.500" />
-              </Box>
-              <chakra.h1
-                maxW="18ch"
+            <Box>
+              <Text
+                maxW="560px"
                 mx="auto"
-                fontSize={{ base: "2.25rem", sm: "3rem", lg: "4rem" }}
-                fontFamily="heading"
-                fontWeight="extrabold"
-                mb="16px"
-                lineHeight="1.2"
+                opacity={0.7}
+                fontSize={{ base: "xl", lg: "2xl" }}
+                mt="6"
               >
-                Your Career In Blockchain Starts Here
-              </chakra.h1>
+                Hey, I'm Adam. I'm a software tinkerer who loves good design. I'm currently cutting my teeth with blockchain and sharing with the world what I've learned.
+              </Text>
 
               <Text
                 maxW="560px"
@@ -47,7 +42,7 @@ export default function Home() {
                 fontSize={{ base: "xl", lg: "2xl" }}
                 mt="6"
               >
-                100% open source and FREE
+                In the past I was an early employee at Total Expert, a CRM for the finance world. Im what you call an autodidact, which is just a fancy way of saying I'm a self taught software engineer.
               </Text>
             </Box>
           </Container>

@@ -7,7 +7,7 @@ const Logo = () => {
       letterSpacing="tight"
       fontWeight="bold"
       fontSize="xl"
-      color="brand.500"
+      color="black.500"
     >
       yargz
     </Text>

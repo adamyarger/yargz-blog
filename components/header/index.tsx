@@ -52,7 +52,7 @@ const Header = () => {
             'rgba(26, 32, 44, 0.8)'
           ),
         }}>
-        <Container as={Flex} maxW={'8xl'} align={'center'}>
+        <Container as={Flex} maxW={'3xl'} align={'center'}>
           <Flex
             flex={{ base: 1, md: 'auto' }}
             ml={{ base: -2 }}
