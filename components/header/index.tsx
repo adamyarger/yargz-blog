@@ -37,8 +37,6 @@ const Header = () => {
         top="0"
         w={'full'}
         minH={'60px'}
-        borderBottom={'1px solid'}
-        borderBottomColor={useColorModeValue('gray.300', 'gray.900')}
         zIndex="999"
         justify={'center'}
         css={{
