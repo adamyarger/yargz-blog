@@ -16,6 +16,10 @@ export const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'About',
     href: '/about'
+  },
+  {
+    label: 'Posts',
+    href: '/posts'
   }
 ];
 

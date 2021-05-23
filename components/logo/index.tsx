@@ -9,7 +9,7 @@ const Logo = () => {
       fontSize="xl"
       color="brand.500"
     >
-      blocademy
+      yargz
     </Text>
   )
 }
