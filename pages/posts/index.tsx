@@ -3,10 +3,7 @@ import DefaultLayout from 'layouts/default-layout'
 import Container from 'components/container'
 import PageHeader from 'components/page-header'
 import ColorBar from 'components/color-bar'
-import {
-  Box,
-  Heading
-} from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 interface Props {
   data: {

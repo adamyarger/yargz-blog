@@ -1,14 +1,10 @@
 import Head from 'next/head'
-import Header from 'components/header'
 import {
   Box,
-  chakra,
   Text
 } from '@chakra-ui/react';
 import Container from 'components/container'
-import CourseDirectory from 'components/course-directory'
 import DefaultLayout from 'layouts/default-layout'
-import BlockchainIcon from 'components/icons/blockchain-icon'
 
 export default function Home() {
   return (
@@ -42,7 +38,7 @@ export default function Home() {
                 fontSize={{ base: "xl", lg: "2xl" }}
                 mt="6"
               >
-                In the past I was an early employee at Total Expert, a CRM for the finance world. Im what you call an autodidact, which is just a fancy way of saying I'm a self taught software engineer.
+                In the past I was an early engineer at Total Expert, a CRM for the finance world. I'm an autodidact, which is just a fancy way of saying I taught myself how to code.
               </Text>
             </Box>
           </Container>
@@ -55,7 +51,7 @@ export default function Home() {
           mb={20}
         >
           <Container maxW="760px">
-            <CourseDirectory />
+            Dude
           </Container>
         </Box>
       </DefaultLayout>
