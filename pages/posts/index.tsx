@@ -1,6 +1,8 @@
-import DefaultLayout from 'layouts/default-layout'
 import Head from 'next/head'
+import DefaultLayout from 'layouts/default-layout'
 import Container from 'components/container'
+import PageHeader from 'components/page-header'
+import ColorBar from 'components/color-bar'
 import {
   Box,
   Heading
@@ -22,12 +24,12 @@ const Posts = ({ data }: Props) => {
 
         <Box
           as="section"
-          pt={{ base: "6rem", md: "8rem" }}
+          pt={{ base: "4rem", md: "6rem" }}
           pb={{ base: "0", md: "5rem" }}
         >
           <Container maxW="760px">
-            <Heading as="h2" size="lg" mb="7">Posts</Heading>
-            Dude
+            <PageHeader title="Posts" subtitle="Me typing into the void" />
+            <ColorBar />
           </Container>
         </Box>
       </DefaultLayout>
