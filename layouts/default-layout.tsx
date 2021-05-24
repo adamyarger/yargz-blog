@@ -27,7 +27,9 @@ const DefaultLayout = ({ children }: Props) => {
         zIndex: 1
       }}></chakra.div>
       <Header />
-      {children}
+      <chakra.div minHeight="calc(100vh - 201px)">
+        {children}
+      </chakra.div>
       <Footer />
     </>
   )
