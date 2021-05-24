@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import DefaultLayout from 'layouts/default-layout'
 import Container from 'components/container'
 import PageHeader from 'components/page-header'
@@ -18,6 +19,11 @@ const Posts = ({ data }: Props) => {
         <Head>
           <title>🧠 Posts</title>
         </Head>
+
+        <NextSeo
+          title="Posts"
+          description="Posts about software, blockchain, self-learning"
+        />
 
         <Box
           as="section"

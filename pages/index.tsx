@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { NextSeo } from 'next-seo'
 import {
   Box,
   Text
@@ -13,6 +14,11 @@ export default function Home() {
         <Head>
           <title>yargz</title>
         </Head>
+
+        <NextSeo
+          title="yargz"
+          description="Adam Yarger's personal website, software, blockchain, and good times."
+        />
 
         <Box
           as="section"
