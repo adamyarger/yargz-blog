@@ -23,11 +23,11 @@ export default function PostsList({ posts }: Props) {
 
         return (
           <Box py="6" key={index}>
-            <Link href="#" pb="4">
-              <Heading as="h3" size="xl">{post.title}</Heading>
+            <Link href="#">
+              <Heading as="h3" size="lg" pb="4">{post.title}</Heading>
             </Link>
 
-            <Text color="gray.500" pb="2">{post.subtitle}</Text>
+            <Text color="gray.500" pb="4" fontSize="1.2rem">{post.subtitle}</Text>
 
             <Text color="gray.400">{date}</Text>
           </Box>
