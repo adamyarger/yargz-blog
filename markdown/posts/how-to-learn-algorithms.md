@@ -1,7 +1,7 @@
 ---
-title: 'Introduction to Cryptocurrency'
-date: '2021-05-05'
-course: 'FOUNDATIONS'
+title: "How To Learn Algorithms In 6 Months"
+subtitle: "Cramming is a waste of time, I'll give you some tips to retain algorithms long-term."
+published_at: "2021-05-22"
 ---
 
 ## History of Money

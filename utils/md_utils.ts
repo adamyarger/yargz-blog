@@ -5,17 +5,25 @@ import matter from 'gray-matter'
 export interface PostMetadata {
   id: string
   title: string
-  date: string,
-  course: string
+  published_at: string,
+  subtitle: string
 }
 
 export interface PostData extends PostMetadata {
   mdString: string
 }
 
-const postsDirectory = path.join(process.cwd(), 'markdown/lessons')
+const postsDirectory = path.join(process.cwd(), 'markdown/posts')
 
 export class PostUtil {
+  static getAllPostData() {
+    const fileNames = fs.readdirSync(postsDirectory)
+    return fileNames.map((fileName) => {
+      const id = fileName.replace(/\.md$/, '')
+      return this.getPostData(id, false)
+    })
+  }
+
   static getAllPostIds(): { params: { id: string } }[] {
     const fileNames = fs.readdirSync(postsDirectory)
     return fileNames.map((fileName) => {
@@ -27,7 +35,8 @@ export class PostUtil {
     })
   }
 
-  static getPostData(id: string): PostData {
+  // could pass in formatter as a param
+  static getPostData(id: string, includeContent = true): PostData {
     const fullPath = path.join(postsDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')
     const { content, data } = matter(fileContents)
@@ -35,9 +44,9 @@ export class PostUtil {
     return {
       id,
       title: data.title,
-      date: data.date,
-      course: data.course,
-      mdString: content,
+      published_at: data.published_at,
+      subtitle: data.subtitle,
+      mdString: includeContent && content,
     }
   }
 }

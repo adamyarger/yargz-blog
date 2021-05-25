@@ -6,41 +6,43 @@ import PageHeader from 'components/page-header'
 import ColorBar from 'components/color-bar'
 import { Box } from '@chakra-ui/react'
 import PostsList from 'components/posts/posts-list'
+import { PostData, PostUtil } from 'utils/md_utils'
+
 
 interface Props {
-  data: {
-    posts: any[]
-  }
+  posts: any[]
 }
 
-const Posts = ({ data }: Props) => {
-  const posts = [
-    {
-      title: "First Post",
-      subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-      published_at: "2021-05-21"
-    },
-    {
-      title: "First Post",
-      subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-      published_at: "2021-05-21"
-    },
-    {
-      title: "First Post",
-      subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-      published_at: "2021-05-21"
-    },
-    {
-      title: "First Post",
-      subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-      published_at: "2021-05-21"
-    },
-    {
-      title: "First Post",
-      subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-      published_at: "2021-05-21"
-    }
-  ]
+export default function Posts({ posts }: Props) {
+
+
+  // const posts = [
+  //   {
+  //     title: "First Post",
+  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
+  //     published_at: "2021-05-21"
+  //   },
+  //   {
+  //     title: "First Post",
+  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
+  //     published_at: "2021-05-21"
+  //   },
+  //   {
+  //     title: "First Post",
+  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
+  //     published_at: "2021-05-21"
+  //   },
+  //   {
+  //     title: "First Post",
+  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
+  //     published_at: "2021-05-21"
+  //   },
+  //   {
+  //     title: "First Post",
+  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
+  //     published_at: "2021-05-21"
+  //   }
+  // ]
 
   return (
     <>
@@ -72,4 +74,11 @@ const Posts = ({ data }: Props) => {
   )
 }
 
-export default Posts
+export async function getStaticProps({ params }) {
+  const postData = PostUtil.getAllPostData()
+  return {
+    props: {
+      posts: postData
+    }
+  }
+}
