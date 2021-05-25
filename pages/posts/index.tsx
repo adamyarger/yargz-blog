@@ -6,49 +6,18 @@ import PageHeader from 'components/page-header'
 import ColorBar from 'components/color-bar'
 import { Box } from '@chakra-ui/react'
 import PostsList from 'components/posts/posts-list'
-import { PostData, PostUtil } from 'utils/md_utils'
-
+import { PostMetadata, PostUtil } from 'utils/md_utils'
 
 interface Props {
-  posts: any[]
+  posts: PostMetadata[]
 }
 
 export default function Posts({ posts }: Props) {
-
-
-  // const posts = [
-  //   {
-  //     title: "First Post",
-  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-  //     published_at: "2021-05-21"
-  //   },
-  //   {
-  //     title: "First Post",
-  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-  //     published_at: "2021-05-21"
-  //   },
-  //   {
-  //     title: "First Post",
-  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-  //     published_at: "2021-05-21"
-  //   },
-  //   {
-  //     title: "First Post",
-  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-  //     published_at: "2021-05-21"
-  //   },
-  //   {
-  //     title: "First Post",
-  //     subtitle: "Learning algorithms is hard, but it doesnt have to be. Let's dive into how you can tackle them like a pro.",
-  //     published_at: "2021-05-21"
-  //   }
-  // ]
-
   return (
     <>
       <DefaultLayout>
         <Head>
-          <title>🧠 Posts</title>
+          <title>Posts</title>
         </Head>
 
         <NextSeo

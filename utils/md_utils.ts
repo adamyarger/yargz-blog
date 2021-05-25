@@ -35,7 +35,6 @@ export class PostUtil {
     })
   }
 
-  // could pass in formatter as a param
   static getPostData(id: string, includeContent = true): PostData {
     const fullPath = path.join(postsDirectory, `${id}.md`)
     const fileContents = fs.readFileSync(fullPath, 'utf8')

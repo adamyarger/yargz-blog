@@ -16,17 +16,17 @@ export const components = {
     </Heading>
   ),
   h2: (props) => (
-    <Heading as="h2" fontSize="4xl" mb="1.71rem" mt="2.565rem">
+    <Heading as="h2" fontSize="3xl" mb="1.71rem" mt="2.565rem">
       {props.children}
     </Heading>
   ),
   h3: (props) => (
-    <Heading as="h3" fontSize="3xl" my={3}>
+    <Heading as="h3" fontSize="2xl" my={3}>
       {props.children}
     </Heading>
   ),
   h4: (props) => (
-    <Heading as="h4" fontSize="2xl" my={3}>
+    <Heading as="h4" fontSize="xl" my={3}>
       {props.children}
     </Heading>
   ),
