@@ -1,5 +1,5 @@
 ---
-title: "How To Learn Algorithms In 6 Months"
+title: "Learn Algorithms the Slow Way"
 subtitle: "Cramming is a waste of time, I'll give you some tips to retain algorithms long-term."
 published_at: "2021-05-22"
 ---
