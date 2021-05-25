@@ -3,7 +3,7 @@ import { MDXRemote } from 'next-mdx-remote'
 import DefaultLayout from 'layouts/default-layout'
 import { components } from 'providers/mdx-provider'
 import { GetStaticPaths } from 'next'
-import { PostUtil } from 'utils/md_utils'
+import { PostUtil } from 'utils/md-utils'
 import { Heading, Box } from '@chakra-ui/react'
 import Container from 'components/container'
 

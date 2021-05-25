@@ -1,6 +1,6 @@
 import { Link, Box, Text, Heading } from '@chakra-ui/react'
 import Posts from 'pages/posts'
-import { PostMetadata } from 'utils/md_utils'
+import { PostMetadata } from 'utils/md-utils'
 
 interface Props {
   posts: PostMetadata[]

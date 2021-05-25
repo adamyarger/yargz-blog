@@ -6,7 +6,7 @@ import PageHeader from 'components/page-header'
 import ColorBar from 'components/color-bar'
 import { Box } from '@chakra-ui/react'
 import PostsList from 'components/posts/posts-list'
-import { PostMetadata, PostUtil } from 'utils/md_utils'
+import { PostMetadata, PostUtil } from 'utils/md-utils'
 
 interface Props {
   posts: PostMetadata[]
