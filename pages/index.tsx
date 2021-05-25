@@ -2,12 +2,20 @@ import Head from 'next/head'
 import { NextSeo } from 'next-seo'
 import {
   Box,
-  Text
+  Text,
+  Heading
 } from '@chakra-ui/react';
 import Container from 'components/container'
 import DefaultLayout from 'layouts/default-layout'
+import { PostMetadata, PostUtil } from 'utils/md-utils'
+import PostsList from 'components/posts/posts-list'
+import ColorBar from 'components/color-bar'
 
-export default function Home() {
+interface Props {
+  posts: PostMetadata[]
+}
+
+export default function Home({ posts }: Props) {
   return (
     <>
       <DefaultLayout>
@@ -25,10 +33,9 @@ export default function Home() {
           pt={{ base: "6rem", md: "8rem" }}
           pb={{ base: "0", md: "5rem" }}
         >
-          <Container>
+          <Container maxW="760px">
             <Box>
               <Text
-                maxW="560px"
                 mx="auto"
                 opacity={0.7}
                 fontSize={{ base: "xl", lg: "2xl" }}
@@ -38,7 +45,6 @@ export default function Home() {
               </Text>
 
               <Text
-                maxW="560px"
                 mx="auto"
                 opacity={0.7}
                 fontSize={{ base: "xl", lg: "2xl" }}
@@ -57,10 +63,23 @@ export default function Home() {
           mb={20}
         >
           <Container maxW="760px">
-            Dude
+            <Heading as="h2" size="2xl">Recent Posts</Heading>
+            <ColorBar my="6" />
+            <Box mt="6">
+              <PostsList posts={posts} />
+            </Box>
           </Container>
         </Box>
       </DefaultLayout>
     </>
   )
+}
+
+export async function getStaticProps({ params }) {
+  const postData = PostUtil.getAllPostData()
+  return {
+    props: {
+      posts: postData
+    }
+  }
 }

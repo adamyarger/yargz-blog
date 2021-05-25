@@ -18,7 +18,7 @@ export default function ColorBar(props: BoxProps) {
       backgroundRepeat="no-repeat"
       backgroundSize="100% 4px"
       width="100%"
-      height="1px"
+      height="2px"
       {...props}
     ></Box>
   )

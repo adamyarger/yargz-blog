@@ -32,7 +32,7 @@ export default function Posts({ posts }: Props) {
         >
           <Container maxW="760px">
             <PageHeader title="Posts" subtitle="Me typing into the void" />
-            <ColorBar height="2px" />
+            <ColorBar />
             <Box mt="6">
               <PostsList posts={posts} />
             </Box>

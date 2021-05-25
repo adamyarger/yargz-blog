@@ -21,7 +21,7 @@ export default function PostsList({ posts }: Props) {
         return (
           <Box py="6" key={post.id}>
             <Link href={`/posts/${post.id}`}>
-              <Heading as="h3" size="lg" pb="4">{post.title}</Heading>
+              <Heading as="h3" size="md" pb="4">{post.title}</Heading>
             </Link>
             <Text color="gray.500" pb="4" fontSize="1.2rem">{post.subtitle}</Text>
             <Text color="gray.400">{date}</Text>
