@@ -10,7 +10,7 @@ export interface PostMetadata {
 }
 
 export interface PostData extends PostMetadata {
-  mdString: string
+  body: string
 }
 
 const postsDirectory = path.join(process.cwd(), 'markdown/posts')
@@ -45,7 +45,7 @@ export class PostUtil {
       title: data.title,
       published_at: data.published_at,
       subtitle: data.subtitle,
-      mdString: includeContent && content,
+      body: includeContent && content,
     }
   }
 }

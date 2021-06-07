@@ -22,7 +22,7 @@ export default function Post({ source, data }) {
 
 export async function getStaticProps({ params }) {
   const postData = PostUtil.getPostData(params.id as string)
-  const mdxSource = await serialize(postData.mdString)
+  const mdxSource = await serialize(postData.body)
   return {
     props: {
       source: mdxSource,
