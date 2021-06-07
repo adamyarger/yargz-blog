@@ -35,13 +35,16 @@ export default function Home({ posts }: Props) {
         >
           <Container maxW="760px">
             <Box>
+              <Text fontSize="6rem">
+                👋 Hello ,
+              </Text>
               <Text
                 mx="auto"
                 opacity={0.7}
                 fontSize={{ base: "xl", lg: "2xl" }}
                 mt="6"
               >
-                Hey, I'm Adam. I'm a software tinkerer who loves good design. I'm currently cutting my teeth with blockchain and sharing with the world what I've learned.
+                I'm Adam. I'm a software tinkerer who loves good design. I'm currently cutting my teeth with blockchain and sharing with the world what I've learned.
               </Text>
 
               <Text
@@ -51,6 +54,8 @@ export default function Home({ posts }: Props) {
                 mt="6"
               >
                 In the past I was an early engineer at Total Expert, a CRM for the finance world. I'm an autodidact, which is just a fancy way of saying I taught myself how to code.
+
+                Everything I've learned in software has been from free resources on the internet, which is why I want to help pitch in.
               </Text>
             </Box>
           </Container>
