@@ -43,8 +43,8 @@ export class PostUtil {
     return {
       id,
       title: data.title,
-      published_at: data.published_at,
-      subtitle: data.subtitle,
+      published_at: new Date(data.published_at).toString(),
+      subtitle: data.subtitle || null,
       body: includeContent && content,
     }
   }

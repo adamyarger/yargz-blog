@@ -11,6 +11,7 @@ collections:
     create: true
     fields:
       - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string"}
       - {label: "Publish Date", name: "published_at", widget: "datetime"}
-      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
