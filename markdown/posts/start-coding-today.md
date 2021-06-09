@@ -1,6 +1,6 @@
 ---
 title: Start Coding Today
-subtitle: Why you should build things no one care about
+subtitle: Why you should build things nobody cares about
 published_at: 2021-06-09T17:02:02.460Z
 ---
 If you want to learn to code you have to start young. If you're not writing your first compiler by age 5, you should give up. You have no chance. How are you ever going to compete with those kids at Stanford?
