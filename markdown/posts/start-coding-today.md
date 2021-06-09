@@ -1,7 +1,6 @@
 ---
 title: Start Coding Today
 published_at: 2021-06-09T17:02:02.460Z
-thumbnail: https://miro.medium.com/max/640/1*XthWUtD_NU-VJ7ESA2qX3A.jpeg
 ---
 If you want to learn to code you have to start young. If you're not writing your first compiler by age 5, you should really just give up. You have no chance. How are you ever going to compete with those kids at Stanford?
 
